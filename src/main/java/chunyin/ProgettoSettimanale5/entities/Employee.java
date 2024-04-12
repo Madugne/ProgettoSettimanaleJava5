@@ -25,4 +25,11 @@ public class Employee {
     @OneToMany(mappedBy = "employee")
     @JsonIgnore
     private List<Device> devices;
+
+    public Employee(String name, String surname, String email, String avatarURL) {
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.avatarURL = avatarURL;
+    }
 }
