@@ -46,12 +46,12 @@ public class EmployeeService {
     }
 
     public Employee update(UUID userId, Employee modifiedEmployee){
-        Employee foundAuthor = this.findById(userId);
-        foundAuthor.setName(modifiedEmployee.getName());
-        foundAuthor.setSurname(modifiedEmployee.getSurname());
-        foundAuthor.setEmail(modifiedEmployee.getEmail());
-        foundAuthor.setAvatarURL(modifiedEmployee.getAvatarURL());
-        return employeeRepository.save(foundAuthor);
+        Employee foundEmployee = this.findById(userId);
+        foundEmployee.setName(modifiedEmployee.getName());
+        foundEmployee.setSurname(modifiedEmployee.getSurname());
+        foundEmployee.setEmail(modifiedEmployee.getEmail());
+        foundEmployee.setAvatarURL(modifiedEmployee.getAvatarURL());
+        return employeeRepository.save(foundEmployee);
     }
 
     public void delete(UUID employeeId){

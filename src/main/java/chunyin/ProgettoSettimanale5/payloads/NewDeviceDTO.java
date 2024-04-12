@@ -10,6 +10,5 @@ public record NewDeviceDTO(@NotEmpty(message = "La stato è obbligatorio")
                            Status status,
                            @NotEmpty(message = "Il tipo è obbligatorio")
                            Type type,
-                           @NotEmpty
                            Employee employee) {
 }

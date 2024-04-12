@@ -25,4 +25,10 @@ public class Device {
     @ManyToOne
     @JoinColumn(name = "employee_id")
     private Employee employee;
+
+    public Device(Status status, Type type, Employee employee) {
+        this.status = status;
+        this.type = type;
+        this.employee = employee;
+    }
 }

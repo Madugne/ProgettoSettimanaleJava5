@@ -14,8 +14,5 @@ public record NewEmployeeDTO(@NotEmpty(message = "Il nome proprio è obbligatori
                              String surname,
                              @NotEmpty(message = "L'email è obbligatoria")
                              @Email(message = "L'email inserita non è valida")
-                             String email,
-                             @NotEmpty(message = "La password è obbligatoria")
-                             @Size(min = 4, message = "La password deve avere come minimo 8 caratteri")
-                             String password) {
+                             String email) {
 }
