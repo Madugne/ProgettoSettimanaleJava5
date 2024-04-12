@@ -1,4 +1,4 @@
-package chunyin.ProgettoSettimanale5.exceptions;
+package chunyin.ProgettoSettimanale5.payloads;
 
 import java.time.LocalDateTime;
 

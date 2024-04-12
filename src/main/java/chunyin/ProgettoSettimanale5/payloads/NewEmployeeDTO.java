@@ -1,4 +1,4 @@
-package chunyin.ProgettoSettimanale5.exceptions;
+package chunyin.ProgettoSettimanale5.payloads;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
@@ -17,7 +17,5 @@ public record NewEmployeeDTO(@NotEmpty(message = "Il nome proprio è obbligatori
                              String email,
                              @NotEmpty(message = "La password è obbligatoria")
                              @Size(min = 4, message = "La password deve avere come minimo 8 caratteri")
-                             String password,
-                             @NotEmpty(message = "La data di nascita è obbligatoria")
-                             LocalDate birthday) {
+                             String password) {
 }

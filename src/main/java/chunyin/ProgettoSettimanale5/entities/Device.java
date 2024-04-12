@@ -18,7 +18,9 @@ public class Device {
     @Id
     @GeneratedValue
     private UUID id;
+    @Enumerated(EnumType.STRING)
     private Status status;
+    @Enumerated(EnumType.STRING)
     private Type type;
     @ManyToOne
     @JoinColumn(name = "employee_id")
